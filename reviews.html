@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knee Magician - Customer Reviews</title>
+    <meta name="description" content="Read real customer reviews and testimonials for the Knee Magician, including feedback from medical professionals.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .floating-btn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <h1 class="text-2xl font-bold text-green-800">Topacrobat</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="index.html" class="nav-link text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Home</a>
+                        <a href="faq.html" class="nav-link text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">FAQ</a>
+                        <a href="gallery.html" class="nav-link text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Gallery</a>
+                        <a href="reviews.html" class="nav-link text-green-800 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Reviews</a>
+                        <a href="buy.html" class="nav-link text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium transition-colors">Buy</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-green-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
+                <a href="index.html" class="nav-link block text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="faq.html" class="nav-link block text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-base font-medium">FAQ</a>
+                <a href="gallery.html" class="nav-link block text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-base font-medium">Gallery</a>
+                <a href="reviews.html" class="nav-link block text-green-800 hover:text-green-600 px-3 py-2 rounded-md text-base font-medium">Reviews</a>
+                <a href="buy.html" class="nav-link block text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-base font-medium">Buy</a>
+            </div>
+        </div>
+    </nav>
+
+    <a href="https://wa.me/919529793302?text=I%20want%20to%20buy%20Knee%20Magician" target="_blank" rel="noopener noreferrer" class="floating-btn bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-lg transition-colors">
+        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488"/>
+        </svg>
+    </a>
+
+    <section id="reviews" class="page-section py-20">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Customer Reviews & Testimonials</h1>
+                <p class="text-xl text-gray-600">Real experiences from our satisfied customers and medical professionals</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center text-white font-bold text-lg">S</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">Mr. Sanjeev Naik</h3>
+                            <p class="text-sm text-gray-600">Runner</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"Mr Sanjeev Naik used to need 7000 steps for 5 km run, after using the machine for stretching before run, he needed only 6300 steps!"</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-pink-600 rounded-full flex items-center justify-center text-white font-bold text-lg">स</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">मी संध्या देशपांडे (Sandhya Deshpande)</h3>
+                            <p class="text-sm text-gray-600">Satisfied Customer</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"मी संध्या देशपांडे... फक्त २-३ मिनिटांचा उभे राहण्याचा प्रयत्न मी केला.विशेष म्हणजे माझा डावा गुडघा जो खुप दुखत होता.तो दोन मिनिटात दुखायचा थांबला. इतकेच नव्हे तर मी स्टेशन चा जिना वजन हातात असताना भराभर चढले व उतरले. काय जादू झाली समजले नाही. माझा गुडघा दुखायचा पूर्ण थांबला. मी २०१६ पासून २ वर्ष पुण्यात संचेती हॉस्पिटल मध्ये ट्रीटमेंट घेऊनही आराम पडला नाही... परंतु जे आज फक्त २ मिनिटात झाले. माझा गुडघा थांबला. खुप खुप धन्यवाद काका 🙏🙏😌"</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-indigo-600 rounded-full flex items-center justify-center text-white font-bold text-lg">S</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">Sunil Apte</h3>
+                            <p class="text-sm text-gray-600">Product Benefits</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"You are tired due to whole day's work, you use this machine just for **2 minutes before sleep**, and experience the magic. Leg muscles will be stretched, your blood supply will improve and you will get better sleep. Plus, you will **avoid varicose veins** in future."</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-yellow-600 rounded-full flex items-center justify-center text-white font-bold text-lg">K</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">Knee Magician User</h3>
+                            <p class="text-sm text-gray-600">Quick Relief</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"नमस्कार, काही दिवसांपूर्वी सुनील आपटे सरांनी बनवलेले KNEE MAGICIAN विकत घेतले व त्याचा नियमित वापर करू लागलो. अगदी थोड्याच दिवसात **गुडघे दुखी खूपच कमी झाली**. जर पायाचे, पोटरी चे स्नायू बळकट झाले तर गुडघ्यावर येणारा ताण कमी होतो आणि गुडघे सुद्धा जास्त कार्यक्षम होतात हा त्यांच्या KNEE MAGICIAN मागचा विचार अनुभवायला मिळाला. धन्यवाद 🙏"</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">Dr</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">डॉक्टर .शेखर करमरकर (Dr. Shekhar Karmarkar)</h3>
+                            <p class="text-sm text-gray-600">President, General Practitioner Association, Miraj</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"नि मॅजिशियन ,हे वापरण्यास अगदी सोपे व सर्व पायाच्या सांध्यांच्या भोवतालच्या स्नायूंना व्यायाम मिळू शकेल अस मशीन आहे . त्यामुळे सांध्यांवरचा ताण कमी होईल व दुःख पण कमी होणार यात शंका नाही .तसेच स्नायू मजबूत झाले की त्याच्यातून वाहणाऱ्या रक्तवाहिन्या यातील रक्तभिसरण चांगले होणार त्यामुळे **व्हेरिकोज व्हेन्स वर पण त्याचा चांगला उपयोग** माझ्या पेशंट मध्ये मला बघायला मिळाला. चाळिशीच्या पुढे सर्व लोकांनी याचा उपयोग करावा असे मला वाटते."</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-purple-600 rounded-full flex items-center justify-center text-white font-bold text-lg">Dr</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">Dr. Alhad Kothare. M.D.D.A.</h3>
+                            <p class="text-sm text-gray-600">Consultant Anaesthesiologist</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"I personally feel from two, three minutes of my experience of using KNEE MAGICIAN that it is a device which can **stretch your lower extremity muscles** to tone them in order to share the body weight bearing. In addition to this I feel it can be useful to **prevent or reduce varicosity** of lower extremities’ veins. All these factors help you to reduce leg pain, knee joint pain."</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold text-lg">Dr</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">Dr Beena Apotikar MD</h3>
+                            <p class="text-sm text-gray-600">Doctor and Fitness Expert</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"I am doctor and a fitness expert.I used knee magician in different ways to perform various exercises for improving **Asian squat**, for greater hamstring and **hip flexibility** in order to improve my yoga postures and also for gaining more range in doing splits.It works very well when you stretch both dynamic and static to release tightness and improve flexibility over period of time with regular use."</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-teal-600 rounded-full flex items-center justify-center text-white font-bold text-lg">S</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">Shreya Churi</h3>
+                            <p class="text-sm text-gray-600">Master of Physiotherapy (MPth, KEM)</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"The knee magician is an excellent device for **stretching of calf muscles** and also improving **blood circulation** in legs. The different levels of of the device helps in stretching within the capacity of different individuals. Along with strengthning of muscles, I would recommend knee magician for stretching also."</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold text-lg">S</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">Sunil Joshi Wadala</h3>
+                            <p class="text-sm text-gray-600">Sciatica Relief</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"Congrats..Knee magician apparently has helped me in stopping probable **Sciatica Problem**..I had started getting pain in Right Leg across side line running from waste to toe..I spent **2-2 minutes, 5-6 times a day** ..I realised that Leg pain reduced without saridon..I continued it for 3-4 more days and I am happy to say that the pain was eliminated completely..."</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-gray-600 rounded-full flex items-center justify-center text-white font-bold text-lg">न</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">Nirmal S Jain</h3>
+                            <p class="text-sm text-gray-600">Mahalaxmi Jewellers, Virar East</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"नमस्कार आप सभी को आज एक हैल्थ मशीन के बारे में जानकारी देना चाहता हूं, जिसकी वजह से मेरी माताजी के रोजमर्रा के कार्यों में बहुत परिवर्तन आया। माताजी के दोनों घुटनो में दर्द रहता था चलने फिरने में दिक्कत होती थी... इसके यूज़ के बाद माताजी के **घुटनो का दर्द एकदम कम हो गया** अब वो **दो माला भी चढ़ती हे और ब्रिज भी चढ़ने में उनको कोई दिक्कत नहीं हैं**। अब तो घर पर सभी इसका यूज़ करने लगे हैं।"</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-lime-600 rounded-full flex items-center justify-center text-white font-bold text-lg">A</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">Another User</h3>
+                            <p class="text-sm text-gray-600">Quick Relaxation</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"Yesyes and found my **nerves became relieved of stress in 5min**."</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-cyan-600 rounded-full flex items-center justify-center text-white font-bold text-lg">R</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">Happy Customer</h3>
+                            <p class="text-sm text-gray-600">Great Results</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"Hello Mr. Apte. Your Knee Magician has created magic for my knee. My knee feels **strong n pain has reduced to 80%**. I no more need to wear knee cap all the time. Thank you so much for creating Knee Magician 🙏"</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-fuchsia-600 rounded-full flex items-center justify-center text-white font-bold text-lg">U</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">User Testimonial</h3>
+                            <p class="text-sm text-gray-600">Strength & Relief</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"Yes 👍 it helps to relieve **calf muscle cramps** and make thies strong."</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-amber-600 rounded-full flex items-center justify-center text-white font-bold text-lg">U</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">Regular User</h3>
+                            <p class="text-sm text-gray-600">General Well-being</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"Very good. It helped to loosen **tight muscles** and improve **circulation**. I could feel stretching also helped lower back muscles."</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-rose-600 rounded-full flex items-center justify-center text-white font-bold text-lg">U</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">User & Surekha</h3>
+                            <p class="text-sm text-gray-600">Daily Routine</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"Knee magician is really very useful It’s a magic only exercising for **15 minutes** also stop the pain of legs and knees I myself and Surekha exercises in morning and evening only for 15 minutes **getting relaxed and fresh**."</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-sky-600 rounded-full flex items-center justify-center text-white font-bold text-lg">U</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">Relief Advocate</h3>
+                            <p class="text-sm text-gray-600">Travel & Night Relief</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"You come home tired after a hard day's work. Your leg muscles will be invariably tight. Before sleeping just stand on the machine for **2/3 minutes and see the magic, your legs are relaxed instantly**! You go on a long long driving trip. Carry the machine with your luggage. When you take a lunch/tea break, stand for 2 minutes on machine, experience the magical effect on your legs! No exaggeration here."</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card fade-in">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 bg-emerald-600 rounded-full flex items-center justify-center text-white font-bold text-lg">M</div>
+                        <div class="ml-4">
+                            <h3 class="font-semibold text-gray-900">Marathi User</h3>
+                            <p class="text-sm text-gray-600">Plantar Fasciitis & Relaxation</p>
+                            <div class="flex text-yellow-400">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"काल मला आपल्या ग्रुप मधील श्री सुनील आपटे यांच्याकडून knee magician मशीन ची डिलिव्हरी मिळाली... फक्त **२-३ मिनिटे उभे राहून अतिशय रिलॅक्स वाटले**.. माझ्या मुलाला **planter faciaities** चा प्रॉब्लेम आहे, त्यालाही ह्याच्यावर व्यायाम करून खूप रिलॅक्स वाटले."</p>
+                </div>
+                
+            </div>
+
+            <div class="bg-white rounded-xl shadow-lg p-8 testimonial-card mt-8 fade-in">
+                <div class="flex items-center mb-4">
+                    <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white font-bold text-lg">Dr</div>
+                    <div class="ml-4">
+                        <h3 class="font-semibold text-gray-900">Dr. Shekhar Karmarkar (Second Review)</h3>
+                        <p class="text-sm text-gray-600">President, General Practitioner Association, Miraj.</p>
+                        <div class="flex text-yellow-400">
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 leading-relaxed">"Today, I am sharing my views regarding Knee Magician which I am recommending to many people **above the age of 40**,who are having leg problems like knee pain, pain in the hip, ankle joint, low backache and **Varicose veins** in legs .... This Knee Magician takes the care of three major joints in the body i.e., the hip, Knee and Ankle joint... Its a simple platform... My personal review- It works wonders!!! It's truly a magician!! Thankyou Knee Magician!!"</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Elfsight Google Reviews | Untitled Google Reviews -->
+    <script src="https://elfsightcdn.com/platform.js" async></script>
+    <div class="elfsight-app-7a56bbfc-da9e-46e4-9984-5ace5214c59b" data-elfsight-app-lazy></div>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h3 class="text-2xl font-bold mb-4">Knee Magician Exercise Board</h3>
+                <p class="text-gray-400 mb-6">Two minutes to relax & strengthen your legs</p>
+                <div class="flex justify-center space-x-6 mb-6">
+                    <a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                    <a href="faq.html" class="text-gray-400 hover:text-white transition-colors">FAQ</a>
+                    <a href="gallery.html" class="text-gray-400 hover:text-white transition-colors">Gallery</a>
+                    <a href="reviews.html" class="text-gray-400 hover:text-white transition-colors">Reviews</a>
+                    <a href="buy.html" class="text-gray-400 hover:text-white transition-colors">Buy</a>
+                </div>
+                <div class="border-t border-gray-800 pt-6">
+                    <p class="text-gray-400">&copy; 2025 Topacrobat. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
